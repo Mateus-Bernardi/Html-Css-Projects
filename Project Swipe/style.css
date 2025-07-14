@@ -559,3 +559,125 @@ ul {
   position: absolute;
   top: 10%;
 }
+
+/* === VIRTUAL EVENTS === */
+
+.virtual-events {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-24) 0;
+  position: relative;
+}
+.virtual-events::before {
+  content: "";
+  background-color: var(--bg-white);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.virtual-events .primary-button {
+  background-color: var(--science-blue-600);
+  margin: var(--space-4) 0 0 0;
+}
+.virtual-events .primary-button:hover {
+  background-color: var(--science-blue-900);
+}
+.virtual-events .col-left {
+  height: 446px;
+  padding: 0 var(--space-12) 0 0;
+}
+
+.swipe-sessions-card {
+  width: 540px;
+  height: 446px;
+  box-shadow: var(--shadow-xl);
+  border-radius: 24px;
+  overflow: hidden;
+}
+.swipe-sessions-card .card-top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.swipe-sessions-card .card-top::before {
+  background: linear-gradient(
+    101.33deg,
+    #08209a 0.76%,
+    #6563ff 33.33%,
+    #36c5f0 76.92%,
+    #83e2ff 96.96%
+  );
+  content: "";
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  top: -40%;
+  transform: skewY(-5deg);
+  z-index: 1;
+}
+#sessions-logo {
+  z-index: 2;
+  width: 338px;
+}
+.virtual-events .avatars {
+  position: absolute;
+  bottom: -70px;
+  left: var(--space-12);
+  z-index: 3;
+}
+.virtual-events .avatars img {
+  width: 80px;
+}
+.virtual-events .avatars img:nth-of-type(2) {
+  position: absolute;
+  left: 55px;
+}
+.virtual-events .card-bottom {
+  width: 100%;
+  height: 50%;
+  padding: var(--space-12);
+}
+.virtual-events .card-bottom .subtitle {
+  margin: var(--space-8) 0 0 0;
+}
+.virtual-events .card-bottom .secondary-text {
+  color: var(--text-dark);
+  font-weight: 700;
+  width: 50%;
+}
+
+/* === GETTING STARTED === */
+
+.getting-started {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-12) 0;
+}
+.getting-started .primary-button {
+  background-color: var(--science-blue-600);
+  margin: var(--space-4) 0;
+}
+.getting-started .primary-button:hover {
+  background-color: var(--science-blue-900);
+}
+.getting-started .col-left {
+  padding: 0 var(--space-12) 0 0;
+}
+.getting-started .col-right {
+  /* Necessary override to place cards side-by-side */
+  flex-direction: row;
+}
+.getting-started .col-right .card {
+  width: 50%;
+  height: 220px;
+  padding: 0 var(--space-2) 0 0;
+  margin: 0 var(--space-4) 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
