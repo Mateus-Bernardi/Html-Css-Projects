@@ -380,3 +380,17 @@ ul {
   height: 628px;
   transform: translate(32px, -32px);
 }
+
+/* === PARTNERS === */
+
+.partners-grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  margin: var(--space-12) 0;
+  column-gap: var(--space-4);
+  row-gap: var(--space-8);
+}
+.partners-grid img {
+  height: 60px;
+  place-self: center;
+}
