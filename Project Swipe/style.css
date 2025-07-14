@@ -493,3 +493,23 @@ ul {
   max-width: 470px;
   border-radius: 24px;
 }
+
+/* === WHY SWIPE === */
+
+.why-swipe {
+  width: 100%;
+  padding: var(--space-48) 0;
+}
+.why-swipe .card-container {
+  display: flex;
+  margin: var(--space-8) 0;
+}
+.why-swipe .card-container .card {
+  width: 25%;
+  padding: 0 var(--space-2) 0 0;
+  margin: 0 var(--space-4) 0 0;
+}
+.why-swipe .secondary-text {
+  /* Contextual override to make text darker here */
+  color: var(--text-dark);
+}
