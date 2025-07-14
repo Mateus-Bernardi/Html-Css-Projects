@@ -411,3 +411,37 @@ ul {
 .unified-platform .primary-button:hover {
   background-color: var(--science-blue-900);
 }
+
+/* === GRAPHIC GRID === */
+
+.graphic-grid {
+  display: grid;
+  grid-template-areas:
+    "card slack slack"
+    "phone slack slack"
+    "phone dash dash";
+  grid-gap: var(--space-8);
+  padding: var(--space-8) 0;
+}
+#credit-card {
+  grid-area: card;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  border-radius: 24px;
+}
+#slack-invoice {
+  grid-area: slack;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  border-radius: 24px;
+}
+#phone {
+  grid-area: phone;
+  width: 100%;
+}
+#dash {
+  grid-area: dash;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  border-radius: 24px;
+}
