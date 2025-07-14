@@ -394,3 +394,20 @@ ul {
   height: 60px;
   place-self: center;
 }
+
+/* === UNIFIED PLATFORM === */
+
+.unified-platform {
+  padding: var(--space-12) 0;
+}
+.unified-platform h2 {
+  width: 50%;
+  margin-bottom: var(--space-4);
+}
+.unified-platform .primary-button {
+  background-color: var(--science-blue-600);
+  margin: var(--space-4) 0;
+}
+.unified-platform .primary-button:hover {
+  background-color: var(--science-blue-900);
+}
