@@ -681,3 +681,50 @@ ul {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* === FOOTER === */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-light);
+  padding: var(--space-12) 0;
+}
+.footer .container {
+  display: flex;
+}
+#footer-logo {
+  max-width: 108px;
+  margin: 0 0 var(--space-4) 0;
+}
+.footer .col {
+  width: 25%;
+}
+.footer .col ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .col ul li {
+  margin: var(--space-4) 0;
+}
+.footer .col a {
+  color: var(--text-dark);
+  /* Necessary override for footer link style */
+  font-weight: normal;
+}
+.footer .col a:hover {
+  color: var(--science-blue-600);
+  text-decoration: underline;
+}
+.footer .icon-link {
+  display: flex;
+  align-items: center;
+  margin: var(--space-4) 0;
+}
+.footer .icon-link img {
+  width: 24px;
+}
+.footer h3 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+}
