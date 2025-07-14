@@ -513,3 +513,49 @@ ul {
   /* Contextual override to make text darker here */
   color: var(--text-dark);
 }
+
+/* === GLOBAL === */
+
+.global {
+  width: 100%;
+  color: var(--text-light);
+  position: relative;
+  padding: var(--space-48) 0 0 0;
+}
+.global::before {
+  content: "";
+  width: 100%;
+  height: 1000px;
+  background-color: var(--science-blue-900);
+  position: absolute;
+  top: -32px;
+  left: 0;
+  transform: skewY(-10deg);
+  z-index: -1;
+}
+.global a {
+  color: var(--sky-blue-400);
+}
+.global a:hover {
+  color: var(--text-light);
+}
+.global .card-container {
+  display: flex;
+  margin: var(--space-32) 0;
+}
+.global .card-container .card {
+  width: 25%;
+  padding: 0 var(--space-2) 0 0;
+  margin: 0 var(--space-4) 0 0;
+}
+.global .card-container .card h3 {
+  border-left: 4px solid var(--sky-blue-400);
+  padding: 0 0 0 var(--space-2);
+  line-height: 28px;
+}
+#globe {
+  max-width: 844px;
+  opacity: 25%;
+  position: absolute;
+  top: 10%;
+}
