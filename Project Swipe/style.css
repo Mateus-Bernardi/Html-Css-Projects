@@ -445,3 +445,51 @@ ul {
   box-shadow: var(--shadow-lg);
   border-radius: 24px;
 }
+
+/* === INTEGRATIONS === */
+
+.integrations {
+  color: var(--text-light);
+  width: 100%;
+  position: relative;
+  padding: var(--space-48) 0;
+  z-index: 1;
+}
+.integrations::before {
+  content: "";
+  width: 100%;
+  height: 1100px;
+  background-color: var(--science-blue-900);
+  position: absolute;
+  top: -32px;
+  left: 0;
+  z-index: -1;
+  transform: skewY(-10deg);
+}
+.integrations .primary-button {
+  background-color: var(--sky-blue-400);
+  color: var(--science-blue-900);
+  margin: var(--space-4) 0 0 0;
+}
+.integrations .primary-button:hover {
+  background-color: var(--bg-white);
+}
+.integrations .secondary-button {
+  color: var(--sky-blue-400);
+}
+.integrations .card-container {
+  display: flex;
+  margin: var(--space-8) 0;
+}
+.integrations .card-container .card {
+  width: 50%;
+}
+#api-code {
+  max-width: 470px;
+  margin: 0 0 var(--space-4) 0;
+  border-radius: 24px;
+}
+#terminal-code {
+  max-width: 470px;
+  border-radius: 24px;
+}
