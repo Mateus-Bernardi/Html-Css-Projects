@@ -1,0 +1,184 @@
+/* === ROOT VARIABLES & DESIGN TOKENS === */
+
+:root {
+  /* === COLORS === */
+  --text-dark: #2e2e2e;
+  --text-light: #ffffff;
+  --text-grey: #a1a4a5;
+
+  /* PRIMARY COLOR */
+  --science-blue-50: #eef0fd;
+  --science-blue-100: #d6dcfa;
+  --science-blue-200: #b0bef5;
+  --science-blue-300: #8da3f1;
+  --science-blue-400: #698bed;
+  --science-blue-500: #3d74e8;
+  --science-blue-600: #3160c4;
+  --science-blue-700: #274ea1;
+  --science-blue-800: #193674;
+  --science-blue-900: #0a1d44;
+  --science-blue-950: #04102a;
+
+  /* SECONDARY COLOR */
+  --sky-blue-50: #ddf5fe;
+  --sky-blue-100: #b7ebfe;
+  --sky-blue-200: #66dcfd;
+  --sky-blue-300: #2accf0;
+  --sky-blue-400: #24b3d3;
+  --sky-blue-500: #1d97b3;
+  --sky-blue-600: #157a90;
+  --sky-blue-700: #0d5c6e;
+  --sky-blue-800: #063f4b;
+  --sky-blue-900: #02222a;
+  --sky-blue-950: #011319;
+
+  /* GRAYSCALE PALETTE */
+  --gray-50: #f1f1f1;
+  --gray-100: #dedede;
+  --gray-200: #c2c2c2;
+  --gray-300: #a9a9a9;
+  --gray-400: #939393;
+  --gray-500: #7e7e7e;
+  --gray-600: #6c6c6c;
+  --gray-700: #535353;
+  --gray-800: #393939;
+  --gray-900: #1f1f1f;
+  --gray-950: #111111;
+
+  /* BACKGROUNDS */
+  --bg-white: #ffffff;
+  --bg-light: #f3f4f6;
+
+  /* === FONTS === */
+  --body-font: "Inter", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+
+  /* === TEXT SIZES === */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+  --text-7xl: 4.5rem; /* 72px */
+  --text-8xl: 6rem; /* 96px */
+  --text-9xl: 8rem; /* 128px */
+
+  /* === SPACING === */
+  --space-0: 0;
+  --space-px: 1px;
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-14: 3.5rem; /* 56px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+  --space-32: 8rem; /* 128px */
+  --space-48: 12rem; /* 192px */
+  --space-60: 15rem; /* 240px */
+  --space-80: 20rem; /* 320px */
+  --space-96: 24rem; /* 384px */
+
+  /* === BOX SHADOW === */
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+  --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
+    0 2px 4px -1px hsl(0 0% 0% / 0.1);
+  --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
+    0 4px 6px -1px hsl(0 0% 0% / 0.1);
+  --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
+    0 8px 10px -1px hsl(0 0% 0% / 0.1);
+  --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+
+  /* Width/Height utilities */
+  --width-stantard: 1200px;
+}
+
+/* === GLOBAL & RESET STYLES === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+body {
+  font-family: var(--body-font);
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+}
+
+main {
+  margin: var(--space-10) 0;
+}
+
+/* === TYPOGRAPHY & BASE ELEMENT STYLES === */
+
+h1 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: var(--text-8xl);
+  letter-spacing: -1px;
+  line-height: 1.125;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: var(--text-4xl);
+  letter-spacing: -0.25px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: var(--text-3xl);
+  line-height: 1.2;
+}
+
+h4 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: var(--text-2xl);
+  letter-spacing: 0.25px;
+  line-height: 1.4;
+}
+
+p {
+  font-size: var(--text-lg);
+  line-height: 1.4;
+  font-weight: 400;
+  margin: var(--space-4) 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--science-blue-600);
+  font-weight: 800;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--science-blue-800);
+}
+
+ul {
+  list-style: none;
+}
