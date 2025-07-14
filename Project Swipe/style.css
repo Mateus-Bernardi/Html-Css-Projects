@@ -182,3 +182,118 @@ a:hover {
 ul {
   list-style: none;
 }
+
+/* === REUSABLE COMPONENTS & UTILITY CLASSES === */
+
+/* --- Cards --- */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: var(--space-2) var(--space-4) var(--space-2) 0;
+}
+.card .icon {
+  height: 50px;
+  margin: 0 0 var(--space-2) 0;
+}
+.card h3 {
+  font-size: var(--text-xl);
+  margin: 0;
+  width: 100%;
+}
+
+/* --- Text Styles --- */
+.subtitle {
+  color: var(--science-blue-600);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: var(--text-lg);
+  line-height: 1.4;
+}
+.subtitle2 {
+  color: var(--sky-blue-400);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: var(--text-lg);
+  line-height: 1.4;
+}
+.secondary-text {
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  color: var(--text-grey);
+}
+
+/* --- Buttons --- */
+.primary-button {
+  font-family: var(--body-font);
+  font-size: var(--text-base);
+  letter-spacing: 1.25;
+  font-weight: 600;
+  border-radius: 16px;
+  border: none;
+  color: var(--text-light);
+  background-color: var(--science-blue-900);
+  padding: var(--space-2) var(--space-4);
+  transition: all 0.2s ease-in-out;
+}
+.primary-button:hover {
+  background-color: var(--science-blue-500);
+  cursor: pointer;
+}
+
+.secondary-button {
+  font-family: var(--body-font);
+  font-size: var(--text-base);
+  letter-spacing: 1.25;
+  font-weight: 600;
+  border-radius: 16px;
+  border: none;
+  color: var(--science-blue-900);
+  background-color: transparent;
+  border: 1px solid var(--science-blue-100);
+  padding: var(--space-2) var(--space-4);
+  transition: all 0.2s ease-in-out;
+}
+.secondary-button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+/* --- Button Icon Modifier --- */
+.with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.with-icon > img {
+  transition: transform 0.2s ease-in-out;
+}
+.with-icon:hover > img {
+  transform: translateX(4px);
+}
+
+/* === LAYOUT STYLES === */
+
+.container {
+  width: 100%;
+  max-width: var(--width-stantard);
+  margin: 0 auto;
+}
+
+.two-column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.two-column > .col-left,
+.two-column > .col-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
